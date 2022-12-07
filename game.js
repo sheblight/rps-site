@@ -67,7 +67,7 @@ function game() {
     let playerScore = 0;
     let cpuScore = 0;
     for (let i=0; i<5;i++) {
-        let choice = prompt("Rock, paper, scissors... (what is your choice?) ");
+        let choice = prompt(`Round ${i+1}: Rock, paper, scissors... (what is your choice?) `);
         let result = playRound(choice, getComputerChoice());
         
         // Determine round result
@@ -81,18 +81,18 @@ function game() {
             default:
                 break;
         }
-        alert(`Player score ${playerScore}, Computer score ${cpuScore}`);
+        alert(`Round ${i+1}: Player score ${playerScore}, Computer score ${cpuScore}`);
     }
 
     // Declare final result
     if (playerScore > cpuScore) {
-        console.log("Player wins!");
+        alert("Player wins!");
     }
     else if (playerScore == cpuScore) {
-        console.log("The game is a tie!");
+        alert("The game is a tie!");
     }
     else {
-        console.log("Computer wins!");
+        alert("Computer wins!");
     }
 
 }
