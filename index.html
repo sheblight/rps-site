@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="game.js"></script>
+    <script src="game.js" defer></script>
 </head>
 <body>
-    
+    <button class="rock choice">Rock</button>
+    <button class="paper choice">Paper</button>
+    <button class="scissors choice">Scissors</button>
+    <p class="player-choice">Make your first move...</p>
+    <p class="cpu-choice"></p>
+    <div class="scores">
+        <h2 class="player-score">Player: 0</h2>
+        <h2 class="cpu-score">CPU: 0</h2>
+    </div>
+    <div class="post-game">
+        <p class="winner"></p>
+        <button class="retry">Retry</button>
+    </div>
 </body>
 </html>
